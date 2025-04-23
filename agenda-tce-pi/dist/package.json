@@ -1,0 +1,22 @@
+{
+  "name": "agenda-tce-pi",
+  "version": "1.0.0",
+  "description": "Sistema de Agenda da Presidência do TCE/PI",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "mkdir -p dist && cp -r app.js config models controllers routes views public package.json package-lock.json .env dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "agenda",
+    "tce",
+    "calendario"
+  ],
+  "author": "TCE/PI",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
